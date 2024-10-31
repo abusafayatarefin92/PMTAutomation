@@ -42,8 +42,18 @@ time.sleep(1)
 #Strategic Goals
 driver.find_element(By.XPATH, '(//a[@class=\'dropdown-item tw-text-gray-700 tw-text-xl hover:tw-bg-gray-800 hover:tw-text-white\'][normalize-space()=\'Strategic Goals\'])[1]').click()
 time.sleep(5)
+
+#filter
 driver.find_element(By.XPATH, '(//span[@class=\'kt-input-icon__icon kt-input-icon__icon--right\'])[1]').click()
 time.sleep(1)
+driver.find_element(By.XPATH, '(//span[@role=\'combobox\'])[1]').click()
+time.sleep(1)
+driver.find_element(By.XPATH, '(//li[@role="option"])[1]').click()
+time.sleep(2)
+driver.find_element(By.XPATH, '(//span[@role=\'combobox\'])[2]').click()
+time.sleep(2)
+driver.find_element(By.XPATH, '(//li[@role="option"])[2]').click()
+time.sleep(2)
 driver.find_element(By.XPATH, '(//span[@role=\'combobox\'])[3]').click()
 time.sleep(1)
 driver.find_element(By.XPATH, '(//li[@role="option"])[1]').click()
@@ -55,6 +65,9 @@ time.sleep(2)
 driver.find_element(By.XPATH, '(//span[@id=\'jfSearch\'])[1]').click()
 time.sleep(5)
 
+#Strategic Goal Edit
+driver.find_element(By.XPATH, '(//button[@class="btn btn-edite"])[1]').click()
+time.sleep(2)
 
 time.sleep(5)
 driver.close()
